@@ -1,0 +1,17 @@
+.root {
+    overflow: hidden;
+}
+
+.ticker {
+    display: flex;
+}
+
+.badge {
+    align-self: start;
+    margin: 22px;
+}
+
+
+.tickerContainer {
+    width: 4%;
+}

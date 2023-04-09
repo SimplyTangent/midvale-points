@@ -1,0 +1,200 @@
+.root {
+  border-top: 1px solid #e0dfdf;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #F5F5F3;
+  background-image: url(../../assets/book_background.png);
+  background-size: 50%;
+  display: flex;
+  height: 628px;
+}
+
+.left {
+  flex: 0.5;
+  display: flex;
+
+}
+
+.text {
+  height: 100%;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: solid black 3px;
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+.text > h1 {
+  color: black;
+  padding: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  width: 100%;
+  font-family: 'Nunito';
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+ 
+}
+
+.text > p {
+  display: block;
+  width: 75%;
+  margin: auto;
+  font-size: 1.3rem;
+  font-family: 'Nunito';
+  font-weight: 300;
+  color: black;
+  padding-bottom: 1rem;
+  
+}
+
+
+.right {
+  /* width: 50% */
+  flex: 0.5;
+  height: 100%;
+  display: flex;
+}
+
+
+.thumbnail {
+  margin: auto;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: solid black 3px;
+  background-color: white;
+  width: auto;
+  height: 22rem;
+  cursor: pointer;
+
+  
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  
+}
+
+.modal {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  borderRadius: 0.3rem;
+}
+
+@media (max-width: 992px) {
+  .root {
+    height: fit-content;
+    display: block;
+    background-size: 80%;
+  }
+
+  .text {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+  
+  
+}
+
+@media (max-width: 480px) {
+    .text > h1 {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+
+    .text > p {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    .thumbnail {
+      height: 18rem;
+    }
+
+}
+
+/* .video {
+  animation-duration: 1.5s;
+  animation-name: slidein;
+  
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}  */
+/*.main {
+  
+  height: 30rem;
+  padding-left: 4rem;
+}
+
+.hero > h1 {
+  color: #0e1436;
+  padding: 1rem;
+  padding-left: 0rem;
+  width: 90%;
+  font-family: 'Nunito Sans';
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+
+.hero > p {
+  width: 75%;
+  font-size: 1rem;
+  font-family: 'Nunito';
+  color: #494850;
+}
+
+.emph {
+  font-weight: 900;
+  color: #e27427;
+}
+.picture {
+  flex: 0.5;
+}
+
+.picture > img {
+  border-radius: 4rem;
+  margin-left: 10%;
+  width: 80%;
+}
+
+.video {
+  width: 33.3333vw;
+  height: 22.1875vw;
+}
+
+.login {
+  height: fit-content;
+  text-transform: none;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+.imgButtons {
+  width: 10rem;
+}*/

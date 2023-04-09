@@ -1,0 +1,121 @@
+.root {
+    background-color: white;
+    display: flex;
+    height: 40rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: 100%;
+    flex: 0.5;
+}
+
+.right {
+    padding-top: 10%;
+    flex: 0.5;
+}
+.phone {
+
+    width: 100%;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+}
+
+.mainText {
+    font-family: 'Nunito';
+    font-weight: 900;
+    margin: auto;
+    width: 60%;
+}
+
+.paragraphText {
+    font-family: 'Nunito';
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.list > li {
+    font-family: 'Nunito';
+    line-height: 3rem;
+}
+
+@media (max-width: 992px) {
+    .root {
+        height: 30rem;
+    }
+
+    .right { 
+        padding-top: 0;
+        margin: auto;
+    }
+
+    .left {
+        display: flex;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    .ri2 { 
+        padding-top: 0;
+        margin: auto;
+    }
+
+    .l2 {
+        display: flex;
+        vertical-align: middle;
+        width: 90%;
+    }
+
+    .text > h1 {
+        font-size: 1.5rem;
+        margin: auto;
+    }
+
+    .text > p {
+
+        font-size: 1rem;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+    .list > li {
+        line-height: 2rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .root {
+        height: fit-content;
+        flex-direction: column-reverse;
+    }
+
+    .ro2 {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .right {
+        padding-top: 1rem;
+    }
+
+    .phone {
+        width: 80%;
+    }
+
+    .text > p {
+        width: 60%;
+    }
+    
+}

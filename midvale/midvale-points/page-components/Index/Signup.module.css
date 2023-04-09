@@ -1,0 +1,125 @@
+.root {
+
+
+    height: 25rem;
+    display: flex;
+
+    background-color: whitesmoke;
+}
+
+.left {
+
+    flex: 0.4;
+    height: 100%;
+    
+}
+
+.truck {
+    display: flex;
+    vertical-align: center;
+    margin: auto;
+
+    height: 100%;
+}
+
+.right {
+    flex: 0.6;
+    display: flex;
+}
+
+.signupBox {
+    margin: auto;
+    width: 80%;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #D1F0DF;
+    color: black;
+    border: 3px solid black;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    
+}
+
+.signupBox > h1 {
+    margin: 0;
+    font-family: 'Nunito';
+    font-size: 2rem;
+    font-weight: 00;
+}
+
+.signupBox > p {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-family: 'Nunito';
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.fields {
+    margin-top: 1rem;
+
+}
+
+.email {
+  
+    background-color: rgb(255, 255, 148);
+    width: 45%;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+.buttonWrapper {
+    
+
+
+    display: flex;
+}
+
+.iconbutton {
+
+    vertical-align: center;
+
+}
+
+
+.icon {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 992px) {
+
+    .root {
+        display: block;
+       height: fit-content;
+       width: 100%;
+    }
+
+    .left {
+        width: 75%;
+        margin: auto;
+       height: auto;
+    }
+
+    .truck {
+        height: auto;
+        width: 100%;
+    }
+
+    .right  {
+        padding-bottom: 2rem;
+    }
+
+    .signupBox > h1 {
+        font-size: 1.1 rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .signupBox > h1 {
+        font-size: 1.5rem;
+    }
+    .signupBox > p {
+        font-size: 1rem;
+    }
+}

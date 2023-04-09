@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+
+
+.body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	overflow: hidden;
+}
+
+.clouds{
+    
+	padding: 100px 0;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: absolute; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+.root {
+  background-color: white;
+  height: 100vh;
+}
+
+.heading {
+  margin: auto;
+  margin-top: 1rem;
+  height: 20vh;
+  width: 90vw;
+  padding: 1rem;
+  height: fit-content;
+  outline: 2px dashed black;
+  color: black;
+  font-family: 'Nunito';
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.heading > h1 {
+  text-align: left;
+  /* background-color: rgba(255, 255, 255, 1.9); */
+
+  font-weight: 800;
+  color: black;
+
+  font-size: 3rem;
+  margin: 0;
+}
+
+.heading > p {
+  text-align: left;
+  /* background-color: rgba(255, 255, 255, 1.9); */
+  font-weight: 300;
+  font-size: 1.2rem;
+
+  margin: 0;
+  border-radius: 0.4rem;
+}
+
+.main {
+  height: 80vh;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: flex;
+}
+
+.mystery > h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.period {
+  font-weight: 800;
+}
+
+.bar {
+  border: solid 4px black;
+
+  position: absolute;
+  width: min(25%, 20rem);
+  bottom: 0;
+
+  border-bottom: NONE;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  transition: height 2s;
+}
+
+.bar > h1 {
+  margin-top: 0px;
+  font-family: 'Nunito';
+  padding: 1rem;
+  font-weight: 800;
+
+  padding-bottom: 0rem;
+  font-size: 3rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  color: black;
+}
+
+.bar > h3 {
+  position: absolute;
+  color: black;
+  margin: auto;
+  text-align: center;
+  font-size: 100%;
+  width: 100%;
+  font-family: 'Nunito';
+  font-weight: 400;
+}
+
+.first {
+  background-color: rgba(255, 162, 0, 0.6);
+}
+
+.three {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.second {
+  background-color: rgba(224, 244, 0, 0.732);
+  margin-left: 37.5%;
+}
+
+.third {
+  background-color: rgba(81, 244, 0, 0.7);
+  margin-left: 75%;
+}
+
+.fourth {
+  background-color: #fae24c;
+  margin-left: 56.25%;
+}
+
+.fifth {
+  background-color: #408e27;
+  margin-left: 75%;
+}
+
+.sixth {
+  background-color: #5ec339;
+  margin-left: 93.75%;
+}
+
+.bar > p {
+  text-align: center;
+  margin-top: -100px;
+  font-size: 3rem;
+  background-color: white;
+
+  border-radius: 100px;
+  padding: 1rem;
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.confetti {
+  margin: auto;
+  margin-left: 50%;
+}
+
+.text {
+  color: black;
+
+  font-family: 'Inter';
+  font-weight: 900;
+  margin: auto;
+  margin-top: calc(1rem - 40px);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .bar > h1 {
+    font-size: 2rem;
+  }
+
+  .bar > p {
+    /* font-size: 1rem; */
+  }
+}
