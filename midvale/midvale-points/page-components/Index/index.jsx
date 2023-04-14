@@ -75,7 +75,7 @@ export const Index = ({ points }) => {
         <h1>On-Time Competition</h1>
 
         <p>
-          Winning grade will have food, fun, and friendship on May 18th!
+          Winning grade will win food, fun, and friendship on May 18th!
         </p>
       </Container>
 
